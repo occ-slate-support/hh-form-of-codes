@@ -1,0 +1,64 @@
+code 
+{
+    color: black;
+
+}
+
+#main-column-1
+{
+
+    width: 50%;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border-right: 1px solid #ccc;
+}
+
+#main-column-2
+{
+    width: 50%; 
+    padding: 20px; 
+    font-family: Arial, sans-serif
+}
+
+#widget-wrapper
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper
+{
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+
+.copy-btn
+{
+    background: rgb(249, 146, 57);
+    border-radius: 8px;
+    font-family: monospace;
+    height: 50px;
+    border: 1px solid #ccc;
+}
+
+.copy-btn:hover
+{
+    background: rgb(249, 146, 57);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.hidden-code
+{
+    display: none;
+}
+
+.widget-row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
