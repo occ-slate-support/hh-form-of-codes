@@ -1,3 +1,8 @@
+body
+{
+    overflow: hidden;
+}
+
 code 
 {
     color: black;
@@ -6,18 +11,21 @@ code
 
 #main-column-1
 {
-
+    height: 95vh;
     width: 50%;
     padding: 20px;
     font-family: Arial, sans-serif;
     border-right: 1px solid #ccc;
+    overflow-y: auto;
 }
 
 #main-column-2
 {
+    height: 95vh;
     width: 50%; 
     padding: 20px; 
-    font-family: Arial, sans-serif
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
 }
 
 #widget-wrapper
@@ -30,6 +38,7 @@ code
 {
     max-width: 800px; 
     margin: 0 auto;
+    overflow-y: auto;
 }
 
 
