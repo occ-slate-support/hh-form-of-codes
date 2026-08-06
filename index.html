@@ -8,13 +8,17 @@
     <title>HH Form of Codes</title>
   </head>
   <body>
-    <h1>HH Form of Codes</h1> 
+    <div class="header">
+      <h1>HH Form of Codes</h1>
+    </div>
     <section id="main-container">
+
+      <!-- Widget #1 -->
       <div class="widget-container">
         <section class="widget-element">
           <p
             style="
-              padding: 6px 10px;    
+              padding: 6px 10px;
               background-color: #002d6a;
               color: #ffffff;
               font-size: 15px;
@@ -25,28 +29,60 @@
           </p>
         </section>
         <section class="widget-code-snippet">
-          <button class="copy-btn" data-snippet="snippet1">Copy</button>
-          <code>
-            <p>Student Name: John Doe</p>
-            <p>Student ID: 123456</p>
-            <p>Course: Computer Science</p>
+          <button class="copy-btn" onclick="copyHidden(this)">
+            &lt;p style="padding: 6px 10px; background-color: #002d6a; color:
+            #ffffff; font-size: 15px; border-radius: 6px;"&gt; &lt;b&gt;Student
+            Information&lt;/b&gt; &lt;/p&gt;
+          </button>
+          <code class="hidden-code">
+            &lt;p style="padding: 6px 10px; background-color: #002d6a; color:
+            #ffffff; font-size: 15px; border-radius: 6px;" &gt; &lt;b&gt;Student
+            Information&lt;/b&gt;&lt;/p&gt;
           </code>
-          
+        </section>
+      </div>
+
+      <!-- Widget #2 -->
+      <div class="widget-container">
+        <section class="widget-element">
+          <p
+            style="
+              padding: 6px 10px;
+              background-color: #002d6a;
+              color: #ffffff;
+              font-size: 15px;
+              border-radius: 6px;
+            "
+          >
+            <b>Student Information</b>
+          </p>
+        </section>
+        <section class="widget-code-snippet">
+          <button class="copy-btn" onclick="copyHidden(this)">
+            &lt;p style="padding: 6px 10px; background-color: #002d6a; color:
+            #ffffff; font-size: 15px; border-radius: 6px;"&gt; &lt;b&gt;Student
+            Information&lt;/b&gt; &lt;/p&gt;
+          </button>
+          <code class="hidden-code">
+            &lt;p style="padding: 6px 10px; background-color: #002d6a; color:
+            #ffffff; font-size: 15px; border-radius: 6px;" &gt; &lt;b&gt;Student
+            Information&lt;/b&gt;&lt;/p&gt;
+          </code>
         </section>
       </div>
       <div class="widget-container">
         <p
-            style="
-              background-color: rgb(249, 146, 57);
-              color: #ffffff;
-              font-size: 14px;
-              padding: 6px;
-              border-radius: 6px;
-              font-weight: bold;
-            "
-          >
-            Staff Use Only:
-          </p>
+          style="
+            background-color: rgb(249, 146, 57);
+            color: #ffffff;
+            font-size: 14px;
+            padding: 6px;
+            border-radius: 6px;
+            font-weight: bold;
+          "
+        >
+          Staff Use Only:
+        </p>
       </div>
       <div class="widget-container">
         <p>
