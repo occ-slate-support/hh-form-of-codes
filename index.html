@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="code-snippets.js" defer></script>
+    <script src="transitions.js" defer></script>
     <title>HH Form of Codes</title>
   </head>
   <body>
@@ -13,10 +14,10 @@
       <a href="index.html">Widget</a>
       <a href="mailings.html">Mailing</a>
     </div>
-    <div class="main-container-grid">
+    <div class="main-container-grid" id="grid-widgets">
       <!-- Widget #1 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               padding: 6px 10px;
@@ -30,8 +31,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="padding: 6px 10px; background-color: #002d6a; color:
               #ffffff; font-size: 15px; border-radius: 6px;"&gt;
@@ -39,7 +40,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="padding: 6px 10px; background-color: #002d6a; color:
@@ -51,8 +52,8 @@
       </section>
 
       <!-- Widget #2 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               background-color: rgb(249, 146, 57);
@@ -72,8 +73,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="background-color: rgb(249, 146, 57); color: #ffffff;
               font-size: 14px; padding: 6px; border-radius: 6px; font-weight:
@@ -81,7 +82,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="background-color: rgb(249, 146, 57); color: #ffffff;
@@ -93,8 +94,8 @@
       </section>
 
       <!-- Widget #3 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 15px;
@@ -124,8 +125,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 15px; border: 1px solid #d86018;
               background-color: #fff7f0; border-radius: 8px; box-shadow: 2px 2px
@@ -139,7 +140,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 15px; border: 1px solid #d86018;
@@ -157,8 +158,8 @@
       </section>
 
       <!-- Widget #4 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               background-color: #eef6ff;
@@ -196,8 +197,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="background-color: #eef6ff; border: 1px solid
               #b6d4fe; padding: 16px; border-radius: 6px; margin: 20px 0;"&gt;
@@ -212,7 +213,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="background-color: #eef6ff; border: 1px solid
@@ -231,8 +232,8 @@
       </section>
 
       <!-- Widget #5 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               position: relative;
@@ -286,8 +287,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="position: relative; padding: 15px; border: 1px
               solid #ccc; background-color: #ffffff; border-radius: 6px;
@@ -303,7 +304,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="position: relative; padding: 15px; border: 1px
@@ -323,8 +324,8 @@
       </section>
 
       <!-- Widget #6 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               border: 1px solid #002d6a;
@@ -364,8 +365,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="border: 1px solid #002d6a; border-radius: 10px;
               overflow: hidden; font-size: 14px; box-shadow: 2px 2px 6px rgba(0,
@@ -380,7 +381,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="border: 1px solid #002d6a; border-radius: 10px;
@@ -399,8 +400,8 @@
       </section>
 
       <!-- Widget #7 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 15px;
@@ -432,8 +433,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 15px; border: 1px solid #002d6a;
               background-color: #f0f4fa; border-radius: 10px; box-shadow: 2px
@@ -448,7 +449,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 15px; border: 1px solid #002d6a;
@@ -467,8 +468,8 @@
       </section>
 
       <!-- Widget #8 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 15px;
@@ -492,8 +493,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 15px; border: 1px solid #002d6a;
               background-color: #f0f4fa; border-radius: 10px; box-shadow: 2px
@@ -503,7 +504,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 15px; border: 1px solid #002d6a;
@@ -517,8 +518,8 @@
       </section>
 
       <!-- Widget #9 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 12px;
@@ -536,8 +537,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 12px; border: 1px solid #d86018;
               background-color: #fff7f0; border-radius: 10px; box-shadow: 2px
@@ -546,7 +547,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 12px; border: 1px solid #d86018;
@@ -559,8 +560,8 @@
       </section>
 
       <!-- Widget #10 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 12px;
@@ -582,8 +583,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 12px; border: 1px solid #f0c000;
               background-color: #fffbe6; border-radius: 10px; box-shadow: 2px
@@ -594,7 +595,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 12px; border: 1px solid #f0c000;
@@ -609,8 +610,8 @@
       </section>
 
       <!-- Widget #11 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 12px;
@@ -629,8 +630,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 12px; border: 1px solid #ff9800;
               background-color: #fff3cd; border-radius: 10px; box-shadow: 2px
@@ -640,7 +641,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 12px; border: 1px solid #ff9800;
@@ -654,8 +655,8 @@
       </section>
 
       <!-- Widget #12 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 12px;
@@ -674,8 +675,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 12px; border: 1px solid #6f42c1;
               background-color: #f3e8ff; border-radius: 10px; box-shadow: 2px
@@ -685,7 +686,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 12px; border: 1px solid #6f42c1;
@@ -699,8 +700,8 @@
       </section>
 
       <!-- Widget #13 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 12px;
@@ -719,8 +720,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 12px; border: 1px solid #b0b0b0;
               background-color: #f9f9f9; border-radius: 10px; box-shadow: 2px
@@ -729,7 +730,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 12px; border: 1px solid #b0b0b0;
@@ -742,8 +743,8 @@
       </section>
 
       <!-- Widget #14 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 12px;
@@ -771,8 +772,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 12px; border: 1px solid #002d6a;
               background-color: #f0f4fa; border-radius: 10px; box-shadow: 2px
@@ -787,7 +788,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 12px; border: 1px solid #002d6a;
@@ -806,8 +807,8 @@
       </section>
 
       <!-- Widget #15 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 12px;
@@ -835,8 +836,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 12px; border-left: 5px solid #002d6a;
               background-color: #f0f4fa; border-radius: 10px; box-shadow: 2px
@@ -851,7 +852,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 12px; border-left: 5px solid #002d6a;
@@ -870,8 +871,8 @@
       </section>
 
       <!-- Widget #16 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 12px;
@@ -895,8 +896,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 12px; border: 2px dashed #f99239;
               background-color: #fffaf5; border-radius: 6px; text-align: center;
@@ -906,7 +907,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 12px; border: 2px dashed #f99239;
@@ -920,8 +921,8 @@
       </section>
 
       <!-- Widget #17 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div style="text-align: center; margin: 15px 0">
             <a
               href="{{Form-Link}}"
@@ -945,8 +946,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="text-align: center; margin: 15px 0"&gt; &lt;a
               href="{{Form-Link}}" style="background-color: #002d6a; color:
@@ -956,7 +957,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="text-align: center; margin: 15px 0"&gt; &lt;a
@@ -970,8 +971,8 @@
       </section>
 
       <!-- Widget #18 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div style="text-align: center; margin: 25px 0">
             <a
               href="{{Form-Share-Link}}"
@@ -1017,8 +1018,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="text-align: center; margin: 25px 0"&gt; &lt;a
               href="{{Form-Share-Link}}" onmouseout="this.style.background =
@@ -1036,7 +1037,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="text-align: center; margin: 25px 0"&gt; &lt;a
@@ -1058,8 +1059,8 @@
       </section>
 
       <!-- Widget #19 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div style="text-align: center; margin: 30px 0">
             <a
               href="{{Event-Link}}"
@@ -1099,8 +1100,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="text-align: center; margin: 30px 0"&gt; &lt;a
               href="{{Event-Link}}" onmouseout="this.style.transform =
@@ -1116,7 +1117,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="text-align: center; margin: 30px 0"&gt; &lt;a
@@ -1136,8 +1137,8 @@
       </section>
 
       <!-- Widget #20 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div style="text-align: center; margin: 30px 0">
             <a
               href="{{Event-Link}}"
@@ -1183,8 +1184,8 @@
           </style>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="text-align: center; margin: 30px 0"&gt; &lt;a
               href="{{Event-Link}}" style="background: #f99239; color: #002d6a;
@@ -1199,7 +1200,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="text-align: center; margin: 30px 0"&gt; &lt;a
@@ -1218,8 +1219,8 @@
       </section>
 
       <!-- Widget #21 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div style="text-align: center; margin: 25px 0">
             <a
               href="{{Application-Link}}"
@@ -1247,8 +1248,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="text-align: center; margin: 25px 0"&gt; &lt;a
               href="{{Application-Link}}" style="background: #002d6a; color:
@@ -1259,7 +1260,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="text-align: center; margin: 25px 0"&gt; &lt;a
@@ -1274,8 +1275,8 @@
       </section>
 
       <!-- Widget #22 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div style="text-align: center; margin: 25px 0">
             <a
               href="#"
@@ -1313,8 +1314,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="text-align: center; margin: 25px 0"&gt; &lt;a
               href="#" onmouseout="this.style.background = 'transparent';
@@ -1327,7 +1328,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="text-align: center; margin: 25px 0"&gt; &lt;a
@@ -1344,8 +1345,8 @@
       </section>
 
       <!-- Widget #23 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div style="text-align: center; margin: 30px 0">
             <a
               href="{{Waiver-Link}}"
@@ -1371,8 +1372,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="text-align: center; margin: 30px 0"&gt; &lt;a
               href="{{Waiver-Link}}" style="background: #ffffff; color: #333333;
@@ -1382,7 +1383,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="text-align: center; margin: 30px 0"&gt; &lt;a
@@ -1396,8 +1397,8 @@
       </section>
 
       <!-- Widget #24 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div style="text-align: center; margin: 30px 0">
             <p style="font-size: 14px; color: #555; margin-bottom: 10px">
               Applications close March 15. Late submissions may not be reviewed.
@@ -1427,8 +1428,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="text-align: center; margin: 30px 0"&gt; &lt;p
               style="font-size: 14px; color: #555; margin-bottom: 10px"&gt;
@@ -1441,7 +1442,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="text-align: center; margin: 30px 0"&gt; &lt;p
@@ -1458,8 +1459,8 @@
       </section>
 
       <!-- Widget #25 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div style="text-align: center; margin: 25px 0">
             <a
               href="#"
@@ -1491,8 +1492,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="text-align: center; margin: 25px 0"&gt; &lt;a
               href="#" onmouseout="this.style.background = '#f99239'"
@@ -1504,7 +1505,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="text-align: center; margin: 25px 0"&gt; &lt;a
@@ -1520,8 +1521,8 @@
       </section>
 
       <!-- Widget #26 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div style="text-align: center; margin: 25px 0">
             <a
               href="#"
@@ -1545,8 +1546,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="text-align: center; margin: 25px 0"&gt; &lt;a
               href="#" onmouseout="this.style.color = '#002d6a'"
@@ -1557,7 +1558,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="text-align: center; margin: 25px 0"&gt; &lt;a
@@ -1572,8 +1573,8 @@
       </section>
 
       <!-- Widget #27 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               border-left: 6px solid #007bff;
@@ -1591,8 +1592,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="border-left: 6px solid #007bff; background-color:
               #f0f8ff; padding: 12px 16px;"&gt; &lt;strong style="display:
@@ -1602,7 +1603,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="border-left: 6px solid #007bff; background-color:
@@ -1616,8 +1617,8 @@
       </section>
 
       <!-- Widget #28 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               border-left: 6px solid #b00020;
@@ -1636,8 +1637,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="border-left: 6px solid #b00020; background-color:
               #fbeaea; padding: 12px 16px;"&gt; &lt;strong style="display:
@@ -1648,7 +1649,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="border-left: 6px solid #b00020; background-color:
@@ -1663,8 +1664,8 @@
       </section>
 
       <!-- Widget #29 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               border-left: 6px solid #2e7d32;
@@ -1684,8 +1685,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="border-left: 6px solid #2e7d32; background-color:
               #e6f4ea; padding: 12px 16px;"&gt; &lt;strong style="display:
@@ -1697,7 +1698,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="border-left: 6px solid #2e7d32; background-color:
@@ -1713,8 +1714,8 @@
       </section>
 
       <!-- Widget #30 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               border-left: 6px solid #002d6a;
@@ -1736,8 +1737,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="border-left: 6px solid #002d6a; background-color:
               #e0e7f3; padding: 12px 16px;"&gt; &lt;strong style="display:
@@ -1751,7 +1752,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="border-left: 6px solid #002d6a; background-color:
@@ -1769,8 +1770,8 @@
       </section>
 
       <!-- Widget #31 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               border-left: 6px solid #002d6a;
@@ -1805,8 +1806,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="border-left: 6px solid #002d6a; background-color:
               #e8eef8; padding: 14px 18px; border-radius: 6px; font-family:
@@ -1822,7 +1823,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="border-left: 6px solid #002d6a; background-color:
@@ -1842,8 +1843,8 @@
       </section>
 
       <!-- Widget #32 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 10px;
@@ -1861,8 +1862,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 10px; background-color: #fbeaea;
               text-align: center; color: #b00020; border-radius: 6px;"&gt; ⚠️
@@ -1871,7 +1872,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 10px; background-color: #fbeaea;
@@ -1884,8 +1885,8 @@
       </section>
 
       <!-- Widget #33 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 10px 14px;
@@ -1901,8 +1902,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 10px 14px; border: 2px dashed #28a745;
               background-color: #eafaf1; border-radius: 5px;"&gt; ✅ You’re
@@ -1911,7 +1912,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 10px 14px; border: 2px dashed #28a745;
@@ -1924,8 +1925,8 @@
       </section>
 
       <!-- Widget #34 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 15px;
@@ -1941,8 +1942,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 15px; background-color: #f4f4f4;
               border-left: 5px solid #666; font-style: italic;"&gt; This section
@@ -1950,7 +1951,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 15px; background-color: #f4f4f4;
@@ -1962,8 +1963,8 @@
       </section>
 
       <!-- Widget #35 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 10px;
@@ -1981,8 +1982,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 10px; background-color: #e6f9ed;
               text-align: center; color: #2e7d32; border-radius: 6px;"&gt; ✅
@@ -1990,7 +1991,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 10px; background-color: #e6f9ed;
@@ -2002,8 +2003,8 @@
       </section>
 
       <!-- Widget #36 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 10px;
@@ -2021,8 +2022,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 10px; background-color: #fffde7;
               text-align: center; color: #9e880d; border-radius: 6px;"&gt; 💡
@@ -2030,7 +2031,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 10px; background-color: #fffde7;
@@ -2042,8 +2043,8 @@
       </section>
 
       <!-- Widget #37 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               padding: 10px;
@@ -2057,8 +2058,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="padding: 10px; border: 2px solid #007bff;
               background-color: #eaf4ff;"&gt; ℹ️ Just a heads-up: This form will
@@ -2066,7 +2067,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="padding: 10px; border: 2px solid #007bff;
@@ -2078,8 +2079,8 @@
       </section>
 
       <!-- Widget #38 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               padding: 10px;
@@ -2093,8 +2094,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="padding: 10px; border: 2px solid #28a745;
               background-color: #e6f4ea;"&gt; ✅ Your form was submitted
@@ -2102,7 +2103,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="padding: 10px; border: 2px solid #28a745;
@@ -2114,8 +2115,8 @@
       </section>
 
       <!-- Widget #39 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               padding: 10px;
@@ -2130,8 +2131,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="padding: 10px; border: 2px solid #dc3545;
               background-color: #fbeaea;"&gt; ⚠️ Oops! Please make sure all
@@ -2139,7 +2140,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="padding: 10px; border: 2px solid #dc3545;
@@ -2151,15 +2152,15 @@
       </section>
 
       <!-- Widget #40 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p style="padding: 5px; background-color: #4c6c96; color: #ffffff">
             <strong>Smaller Header:</strong>
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="padding: 5px; background-color: #4c6c96; color:
               #ffffff"&gt; &lt;strong&gt;Smaller Header:&lt;/strong&gt;
@@ -2167,7 +2168,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="padding: 5px; background-color: #4c6c96; color:
@@ -2179,8 +2180,8 @@
       </section>
 
       <!-- Widget #41 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               padding: 6px 10px;
@@ -2198,8 +2199,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="padding: 6px 10px; background-color: #002d6a; color:
               #ffffff; font-size: 15px; border-radius: 6px;"&gt;
@@ -2207,7 +2208,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="padding: 6px 10px; background-color: #002d6a; color:
@@ -2219,8 +2220,8 @@
       </section>
 
       <!-- Widget #42 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               padding: 5px 0px;
@@ -2310,8 +2311,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="padding: 5px 0px; color: #002d6a; font-size: 16px;
               border-bottom: 2px solid #002d6a; margin-bottom: 8px;"&gt;
@@ -2332,7 +2333,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="padding: 5px 0px; color: #002d6a; font-size: 16px;
@@ -2357,8 +2358,8 @@
       </section>
 
       <!-- Widget #43 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               padding: 5px;
@@ -2374,8 +2375,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="padding: 5px; background-color: #002d6a; color:
               #ffffff; border-radius: 6px;"&gt; &lt;b&gt;Smaller Student
@@ -2383,7 +2384,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="padding: 5px; background-color: #002d6a; color:
@@ -2395,8 +2396,8 @@
       </section>
 
       <!-- Widget #44 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               text-align: center;
@@ -2418,8 +2419,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="text-align: center; background-color: #e0e7f3; color:
               #002d6a; font-size: 14px; padding: 6px; border-radius: 6px;
@@ -2427,7 +2428,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="text-align: center; background-color: #e0e7f3; color:
@@ -2439,8 +2440,8 @@
       </section>
 
       <!-- Widget #45 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               text-align: center;
@@ -2462,8 +2463,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="text-align: center; background-color: #fff2e6; color:
               #f99239; font-size: 14px; padding: 6px; border-radius: 6px;
@@ -2471,7 +2472,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="text-align: center; background-color: #fff2e6; color:
@@ -2483,8 +2484,8 @@
       </section>
 
       <!-- Widget #46 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               background-color: rgb(85, 85, 85);
@@ -2504,8 +2505,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="background-color: rgb(85, 85, 85); color: rgb(242,
               242, 242); font-size: 14px; padding: 6px; border-radius: 6px;
@@ -2513,7 +2514,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="background-color: rgb(85, 85, 85); color: rgb(242,
@@ -2525,8 +2526,8 @@
       </section>
 
       <!-- Widget #47 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               padding: 6px 10px;
@@ -2544,8 +2545,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="padding: 6px 10px; background-color: #e0e7f3; color:
               #002d6a; font-size: 15px; border-radius: 6px;"&gt; 🗓️
@@ -2553,7 +2554,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="padding: 6px 10px; background-color: #e0e7f3; color:
@@ -2565,8 +2566,8 @@
       </section>
 
       <!-- Widget #48 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div style="border-bottom: 4px solid #f99239; margin-bottom: 10px">
             <p style="margin: 0; font-size: 18px; color: #002d6a">
               <strong>Section Title Here</strong>
@@ -2574,8 +2575,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="border-bottom: 4px solid #f99239; margin-bottom:
               10px"&gt; &lt;p style="margin: 0; font-size: 18px; color:
@@ -2584,7 +2585,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="border-bottom: 4px solid #f99239; margin-bottom:
@@ -2597,8 +2598,8 @@
       </section>
 
       <!-- Widget #49 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div style="border-bottom: 2px solid #f99239; margin-bottom: 8px">
             <p
               style="
@@ -2616,8 +2617,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="border-bottom: 2px solid #f99239; margin-bottom:
               8px"&gt; &lt;p style="margin: 0; font-size: 16px; font-weight:
@@ -2625,7 +2626,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="border-bottom: 2px solid #f99239; margin-bottom:
@@ -2637,8 +2638,8 @@
       </section>
 
       <!-- Widget #50 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               font-size: 15px;
@@ -2656,8 +2657,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="font-size: 15px; color: #002d6a; border-bottom: 2px
               solid #4c6c96; padding-bottom: 4px; margin-top: 24px;"&gt;
@@ -2665,7 +2666,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="font-size: 15px; color: #002d6a; border-bottom: 2px
@@ -2677,8 +2678,8 @@
       </section>
 
       <!-- Widget #51 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               background-color: #fff2e6;
@@ -2693,8 +2694,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="background-color: #fff2e6; padding: 12px 15px;
               border-radius: 8px;"&gt; 🧡 CalWORKs services are available to
@@ -2702,7 +2703,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="background-color: #fff2e6; padding: 12px 15px;
@@ -2714,8 +2715,8 @@
       </section>
 
       <!-- Widget #52 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               border-left: 5px solid #f99239;
@@ -2735,8 +2736,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="border-left: 5px solid #f99239; background-color:
               #fff2e6; box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); padding:
@@ -2745,7 +2746,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="border-left: 5px solid #f99239; background-color:
@@ -2758,8 +2759,8 @@
       </section>
 
       <!-- Widget #53 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               border-left: 5px solid #0064a4;
@@ -2777,8 +2778,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="border-left: 5px solid #0064a4; background-color:
               #e6f1f9; padding: 10px; margin-bottom: 15px; border-radius:
@@ -2787,7 +2788,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="border-left: 5px solid #0064a4; background-color:
@@ -2800,8 +2801,8 @@
       </section>
 
       <!-- Widget #54 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               background-color: #e6f4ea;
@@ -2823,8 +2824,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="background-color: #e6f4ea; color: #1a7f49;
               font-weight: bold; padding: 10px 14px; border-left: 5px solid
@@ -2833,7 +2834,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="background-color: #e6f4ea; color: #1a7f49;
@@ -2846,8 +2847,8 @@
       </section>
 
       <!-- Widget #55 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               background-color: #fdecea;
@@ -2869,8 +2870,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="background-color: #fdecea; color: #d93025;
               font-weight: bold; padding: 10px 14px; border-left: 5px solid
@@ -2880,7 +2881,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="background-color: #fdecea; color: #d93025;
@@ -2894,8 +2895,8 @@
       </section>
 
       <!-- Widget #56 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               background-color: #fff8e1;
@@ -2917,8 +2918,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="background-color: #fff8e1; color: #c48800;
               font-weight: bold; padding: 10px 14px; border-left: 5px solid
@@ -2927,7 +2928,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="background-color: #fff8e1; color: #c48800;
@@ -2940,8 +2941,8 @@
       </section>
 
       <!-- Widget #57 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               margin: 32px 0 16px 0;
@@ -2994,8 +2995,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="margin: 32px 0 16px 0; border: 1px solid #d1d5db;
               border-left: 6px solid #002d6a; border-radius: 8px;
@@ -3010,7 +3011,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="margin: 32px 0 16px 0; border: 1px solid #d1d5db;
@@ -3029,8 +3030,8 @@
       </section>
 
       <!-- Widget #58 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               padding: 6px 10px;
@@ -3048,8 +3049,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="padding: 6px 10px; background-color: #f2f6fa; color:
               #002d6a; font-size: 15px; border-left: 4px solid #4c6c96;"&gt;
@@ -3057,7 +3058,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="padding: 6px 10px; background-color: #f2f6fa; color:
@@ -3069,8 +3070,8 @@
       </section>
 
       <!-- Widget #59 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               padding: 6px 10px;
@@ -3088,8 +3089,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="padding: 6px 10px; background-color: #fff2e6; color:
               #002d6a; font-size: 15px; border-left: 4px solid #f99239;"&gt; 💬
@@ -3097,7 +3098,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="padding: 6px 10px; background-color: #fff2e6; color:
@@ -3109,8 +3110,8 @@
       </section>
 
       <!-- Widget #60 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               background-color: #0064a4;
@@ -3128,8 +3129,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="background-color: #0064a4; color: white; padding:
               10px; margin-bottom: 15px; border-radius: 5px;"&gt; 💬
@@ -3137,7 +3138,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="background-color: #0064a4; color: white; padding:
@@ -3149,8 +3150,8 @@
       </section>
 
       <!-- Widget #61 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               margin: 24px 0;
@@ -3206,8 +3207,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="margin: 24px 0; border: 1px solid #d1d5db;
               border-top: 5px solid #002d6a; border-radius: 8px;
@@ -3223,7 +3224,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="margin: 24px 0; border: 1px solid #d1d5db;
@@ -3243,8 +3244,8 @@
       </section>
 
       <!-- Widget #62 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               background-color: #fff4e6;
@@ -3266,8 +3267,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="background-color: #fff4e6; border: 1px solid
               #f9c784; padding: 14px 16px; border-radius: 6px; margin: 16px
@@ -3278,7 +3279,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="background-color: #fff4e6; border: 1px solid
@@ -3293,8 +3294,8 @@
       </section>
 
       <!-- Widget #63 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               border: 2px solid #0064a4;
@@ -3314,8 +3315,8 @@
           </p>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="border: 2px solid #0064a4; padding: 10px;
               margin-bottom: 15px; border-radius: 5px; background-color:
@@ -3324,7 +3325,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="border: 2px solid #0064a4; padding: 10px;
@@ -3337,8 +3338,8 @@
       </section>
 
       <!-- Widget #64 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               border-left: 5px solid #0064a4;
@@ -3357,8 +3358,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="border-left: 5px solid #0064a4; background-color:
               #e6f1f9; padding: 10px; border-radius: 5px; margin-bottom:
@@ -3367,7 +3368,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="border-left: 5px solid #0064a4; background-color:
@@ -3380,8 +3381,8 @@
       </section>
 
       <!-- Widget #65 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               margin: 20px 0;
@@ -3409,8 +3410,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="margin: 20px 0; padding: 12px 14px; border-radius:
               6px; background-color: #eef4fb; border: 1px solid #d7e3f3;
@@ -3422,7 +3423,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="margin: 20px 0; padding: 12px 14px; border-radius:
@@ -3438,8 +3439,8 @@
       </section>
 
       <!-- Widget #66 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <style type="text/css">
             /*<![CDATA[*/
 
@@ -3537,8 +3538,8 @@
           </table>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;style type="text/css"&gt; /*&lt;![CDATA[*/ table.student-info
               { width: 100%; border-collapse: separate; border-spacing: 0;
@@ -3567,7 +3568,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;style type="text/css"&gt; /*&lt;![CDATA[*/ table.student-info
@@ -3600,8 +3601,8 @@
       </section>
 
       <!-- Widget #67 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               max-width: 100%;
@@ -4023,8 +4024,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="max-width: 100%; margin: 0 auto; font-family:
               Arial, Helvetica, sans-serif; color: #1f2937;"&gt; &lt;div
@@ -4106,7 +4107,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="max-width: 100%; margin: 0 auto; font-family:
@@ -4192,8 +4193,8 @@
       </section>
 
       <!-- Widget #68 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <style type="text/css">
             /*<![CDATA[*/
 
@@ -4233,8 +4234,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;style type="text/css"&gt; /*&lt;![CDATA[*/ .progress-container
               { width: 100%; background: #e6e6e6; border-radius: 20px; overflow:
@@ -4247,7 +4248,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;style type="text/css"&gt; /*&lt;![CDATA[*/ .progress-container
@@ -4264,8 +4265,8 @@
       </section>
 
       <!-- Widget #69 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           Dot progres bar<br />
 
           <style type="text/css">
@@ -4313,8 +4314,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               Dot progres bar&lt;br/&gt; &lt;style type="text/css"&gt;
               /*&lt;![CDATA[*/ .step-dots { display: flex; justify-content:
@@ -4330,7 +4331,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               Dot progres bar&lt;br/&gt; &lt;style type="text/css"&gt;
@@ -4350,8 +4351,8 @@
       </section>
 
       <!-- Widget #70 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           Dot progress bar with labels<br />
 
           <style type="text/css">
@@ -4439,8 +4440,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               Dot progress bar with labels&lt;br/&gt; &lt;style
               type="text/css"&gt; /*&lt;![CDATA[*/ .step-dots { display: flex;
@@ -4466,7 +4467,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               Dot progress bar with labels&lt;br/&gt; &lt;style
@@ -4496,8 +4497,8 @@
       </section>
 
       <!-- Widget #71 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div style="margin: 15px 0">
             <div style="font-size: 13px; margin-bottom: 4px">Form Progress</div>
 
@@ -4517,8 +4518,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="margin: 15px 0"&gt; &lt;div style="font-size: 13px;
               margin-bottom: 4px"&gt;Form Progress&lt;/div&gt; &lt;div
@@ -4528,7 +4529,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="margin: 15px 0"&gt; &lt;div style="font-size: 13px;
@@ -4542,8 +4543,8 @@
       </section>
 
       <!-- Widget #72 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <p
             style="
               padding: 10px;
@@ -4559,8 +4560,8 @@
           <hr />
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;p style="padding: 10px; border: 2px solid #f2f2f2;
               background-color: #f2f2f2;"&gt; &lt;strong&gt;Alternative Option
@@ -4568,7 +4569,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;p style="padding: 10px; border: 2px solid #f2f2f2;
@@ -4580,8 +4581,8 @@
       </section>
 
       <!-- Widget #73 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <style type="text/css">
             /*<![CDATA[*/
 
@@ -4829,8 +4830,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;style type="text/css"&gt; /*&lt;![CDATA[*/ :root { --occblue:
               #002d6a; --occorange: #f99239; --text: #1f2937; --muted: #5b6573;
@@ -4912,7 +4913,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;style type="text/css"&gt; /*&lt;![CDATA[*/ :root { --occblue:
@@ -4998,8 +4999,8 @@
       </section>
 
       <!-- Widget #74 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               border: 1px solid #e0e0e0;
@@ -5098,8 +5099,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="border: 1px solid #e0e0e0; border-radius: 12px;
               overflow: hidden; font-size: 14px; box-shadow: 0 4px 10px rgba(0,
@@ -5133,7 +5134,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="border: 1px solid #e0e0e0; border-radius: 12px;
@@ -5171,8 +5172,8 @@
       </section>
 
       <!-- Widget #75 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <div
             style="
               padding: 10px;
@@ -5192,8 +5193,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;div style="padding: 10px; border: 2px dotted #0d075a;
               background-color: #f2f2f2;"&gt; &lt;b&gt;Dotted Instruction
@@ -5203,7 +5204,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;div style="padding: 10px; border: 2px dotted #0d075a;
@@ -5217,8 +5218,8 @@
       </section>
 
       <!-- Widget #76 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           Table!&nbsp;<em>(copied from Pirates Promise form)</em>
 
           <table
@@ -5283,8 +5284,8 @@
           </table>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               Table!&amp;nbsp;&lt;em&gt;(copied from Pirates Promise
               form)&lt;/em&gt; &lt;table border="1" cellpadding="1"
@@ -5310,7 +5311,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               Table!&amp;nbsp;&lt;em&gt;(copied from Pirates Promise
@@ -5340,8 +5341,8 @@
       </section>
 
       <!-- Widget #77 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <h3>Common Date and Time Format Masks</h3>
 
           <table>
@@ -5417,8 +5418,8 @@
           </table>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;h3&gt;Common Date and Time Format Masks&lt;/h3&gt;
               &lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Format
@@ -5442,7 +5443,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;h3&gt;Common Date and Time Format Masks&lt;/h3&gt;
@@ -5470,8 +5471,8 @@
       </section>
 
       <!-- Widget #78 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <style type="text/css">
             /*<![CDATA[*/
 
@@ -5596,8 +5597,8 @@
           </details>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;style type="text/css"&gt; /*&lt;![CDATA[*/ .faq-section {
               margin: 20px 0; } .faq-toggle { background-color: #f2f2f2; color:
@@ -5633,7 +5634,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;style type="text/css"&gt; /*&lt;![CDATA[*/ .faq-section {
@@ -5673,8 +5674,8 @@
       </section>
 
       <!-- Widget #79 -->
-      <section class="widget-container">
-        <section class="widget-demo">
+      <section class="card-container">
+        <section class="demo">
           <u><strong></strong></u>
 
           <style type="text/css">
@@ -5892,8 +5893,8 @@
           </div>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
               &lt;u&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/u&gt; &lt;style
               type="text/css"&gt; /*&lt;![CDATA[*/ .toggle-container { border:
@@ -5987,7 +5988,7 @@
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
               &lt;u&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/u&gt; &lt;style

@@ -1,3 +1,7 @@
+<!-- NOTE: A CSS scale attribute is added to all the mailings 
+ to properly display them within each widget container. The copy
+ functionality still copies the original code. -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -14,38 +18,206 @@
       <a href="mailings.html">Mailing</a>
     </div>
 
-    <div class="main-container-grid">
+    <div class="main-container-grid" id="grid-mailings">
       <!-- Widget #1 -->
-      <section class="widget-container">
-        <section class="widget-demo">
-          <p
-            style="
-              padding: 6px 10px;
-              background-color: #002d6a;
-              color: #ffffff;
-              font-size: 15px;
-              border-radius: 6px;
-            "
-          >
-            <b>Student Information</b>
-          </p>
+      <section class="card-container mailing-container">
+        <section class="demo mailing">
+          <iframe src="Mailings/template-1.html" class="mailing"></iframe>
         </section>
 
-        <section class="widget-code-container">
-          <section class="widget-code">
+        <section class="code-container">
+          <section class="code-snippet">
             <p>
-              &lt;p style="padding: 6px 10px; background-color: #002d6a; color:
-              #ffffff; font-size: 15px; border-radius: 6px;"&gt;
-              &lt;b&gt;Student Information&lt;/b&gt; &lt;/p&gt;
+              &lt;html lang="en" xmlns="http://www.w3.org/1999/xhtml"&gt;
+              &lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;meta charset="UTF-8"
+              /&gt;&lt;meta name="viewport" content="width=device-width,
+              initial-scale=1.0" /&gt; &lt;style type="text/css"&gt;:root {
+              --text: #00183a; --occblue: #002d6a; --occorange: #f99239;
+              --occtan: #f5f0ea; --occgrey: #f2f2f2; --white: #fff; } /* Text
+              Styling */ h2 { font-size: 18px; font-weight: bold; display:
+              block; margin: 0.35em 0; } @media screen and (max-width: 600px) {
+              .content { width: 100% !important; display: block !important;
+              padding: 20px !important; } .header, .body, .footer { padding:
+              20px !important; } } &lt;/style&gt; &lt;/head&gt; &lt;body
+              style="font-family: Arial, Helvetica, sans-serif;"&gt; &lt;table
+              border="0" cellpadding="0" cellspacing="0" style="font-family:
+              Arial, Helvetica, sans-serif; background-color: var(--occgrey);"
+              width="100%"&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td align="center"
+              style="padding: 20px;"&gt;&nbsp; &lt;table border="0"
+              cellpadding="0" cellspacing="0" class="content"
+              style="border-collapse: collapse; border: 1px solid #002d6a;
+              background-color: #ffffff !important;" width="700"&gt;&lt;!--
+              Header --&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td class="header"
+              style="background-color: #ffffff !important; padding: 15px
+              10px;"&gt; &lt;div style="display: flex;justify-content:center;
+              padding: 20 0;"&gt; &lt;div class="header-image" style="color:
+              #fff !important; font-size: 45px;background-color: #fff
+              !important; padding: 0 10px;"&gt; &lt;img alt="Orange Coast
+              College Logo" height="50"
+              src="https://crm.cccd.edu/www/images/OCC%20Slate%20Support/Logo/logo.png"
+              style="display:block;" /&gt; &lt;/div&gt; &lt;/div&gt; &lt;div
+              style="border-bottom: 1px solid #002d6a; width: 650px; display:
+              flex; justify-content: center; width: 100%; padding: 10px 0;"&gt;
+              &lt;/div&gt; &lt;/td&gt; &lt;/tr&gt; &lt;!-- Email Body --&gt;
+              &lt;tr class="email-body"&gt; &lt;td style=" padding: 40px;
+              text-align: left; font-size: 16px; line-height: 1.6; color:
+              var(--text); background-color: #fff !important;"&gt; &lt;p
+              style="text-align: right;"&gt; &lt;strong&gt;Student ID:
+              &lt;/strong&gt;{{student-id}} &lt;/p&gt; &lt;p&gt; Hi
+              {{sys-preferred}},&lt;br /&gt; You can use this general template
+              for your email communications. This template was proudly made with
+              pure HTML. 😎&lt;br /&gt; &lt;br /&gt; You can edit this by
+              clicking "Edit Message." This template is built so you don't need
+              to use any code or 3rd party websites to design an email.
+              &lt;/p&gt; &lt;h2&gt; Lorem ipsum &lt;/h2&gt; &lt;!--Summary--&gt;
+              &lt;div class="mini-container" style="border-left: 10px solid
+              #f99239; padding: 2px 8px; background-color: #e0e0e079; font-size:
+              14px;"&gt; &lt;h3 style="background-color: #002d6a; color:
+              #ffffff; padding: 10px;"&gt; Lorem ipsum dolor &lt;/h3&gt;
+              &lt;p&gt; Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Minima quis a incidunt ipsam expedita voluptas consequuntur
+              beatae, consequatur aliquid laudantium eaque quia iure consectetur
+              debitis molestias veritatis eveniet vel enim. &lt;/p&gt;
+              &lt;/div&gt; &nbsp;&lt;br /&gt; &lt;!--Button--&gt; &lt;div
+              class="button" style="margin: 10px 0;"&gt; &lt;a href="#" style="
+              background-color: #002d6a; padding: 20px; width: fit-content;
+              color: #ffffff !important; font-weight: bold;"&gt;Insert Your Link
+              Here&lt;/a&gt; &lt;/div&gt; &lt;br /&gt; &lt;!--Next Steps--&gt;
+              &lt;h2&gt; Lorem ipsum: &lt;/h2&gt; &lt;ul&gt; &lt;li&gt; Lorem
+              ipsum dolor, sit amet consectetur adipisicing elit. &lt;/li&gt;
+              &lt;li&gt; Labore assumenda voluptates facilis neque dolor veniam
+              error exercitationem beatae. &lt;/li&gt; &lt;/ul&gt; &nbsp;
+              &lt;!--Signature--&gt; &lt;p&gt; P.S. Don't forget to edit the
+              Footer at the end of this email! Make sure to update it with your
+              Department Name, Office Location, and Contact Info (Email, Phone,
+              etc.) &lt;/p&gt; &lt;div style="border-top: 7px solid #f99239;
+              width: 50px; margin: 10px 0;"&gt; &lt;/div&gt;
+              &lt;strong&gt;{{template-department-name}}&lt;/strong&gt;&lt;br
+              /&gt; {{template-location}}&lt;br /&gt; Email: &lt;a
+              href="#"&gt;{{template-department-email}}&lt;/a&gt;&lt;br /&gt;
+              Website: &lt;a
+              href="#"&gt;{{template-department-link}}&lt;/a&gt;&lt;/td&gt;
+              &lt;/tr&gt; &lt;!-- Footer --&gt; &lt;tr&gt; &lt;td class="footer"
+              style="background-color: #002d6a; padding: 40px; text-align:
+              center; color: white; font-size: 12px;"&gt; &lt;div
+              class="social-icons" style="justify-content: center; display:
+              flex; flex-direction: row; gap: 20px; padding: 0 0 10 0;"&gt;
+              &lt;a href="https://orangecoastcollege.edu/"&gt;&lt;img
+              height="25"
+              src="https://crm.cccd.edu/www/images/OCC%20Slate%20Support/Social%20Icons/Web%20(White).png"
+              /&gt;&lt;/a&gt;&lt;a
+              href="https://www.facebook.com/orangecoastcollege"&gt;&lt;img
+              height="25"
+              src="https://crm.cccd.edu/www/images/OCC%20Slate%20Support/Social%20Icons/Facebook%20(White).png"
+              /&gt;&lt;/a&gt;&lt;a
+              href="https://www.instagram.com/orangecoastcollege/"&gt;&lt;img
+              height="25"
+              src="https://crm.cccd.edu/www/images/OCC%20Slate%20Support/Social%20Icons/Instagram%20(White).png"
+              /&gt;&lt;/a&gt;&lt;a href="https://x.com/orangecoast"&gt;&lt;img
+              height="25"
+              src="https://crm.cccd.edu/www/images/OCC%20Slate%20Support/Social%20Icons/Twitter%20(White).png"
+              /&gt;&lt;/a&gt; &lt;/div&gt; Orange Coast College | 2701 Fairview
+              Road Costa Mesa, California 92626 | (714) 432-5072&lt;/td&gt;
+              &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;/td&gt; &lt;/tr&gt;
+              &lt;/tbody&gt; &lt;/table&gt; &lt;/body&gt; &lt;/html&gt;
             </p>
           </section>
 
-          <section class="widget-code-copy">
+          <section class="code-snippet-copy">
             <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
             <code class="hidden-code">
-              &lt;p style="padding: 6px 10px; background-color: #002d6a; color:
-              #ffffff; font-size: 15px; border-radius: 6px;"&gt;
-              &lt;b&gt;Student Information&lt;/b&gt; &lt;/p&gt;
+              &lt;html lang="en" xmlns="http://www.w3.org/1999/xhtml"&gt;
+              &lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;meta charset="UTF-8"
+              /&gt;&lt;meta name="viewport" content="width=device-width,
+              initial-scale=1.0" /&gt; &lt;style type="text/css"&gt;:root {
+              --text: #00183a; --occblue: #002d6a; --occorange: #f99239;
+              --occtan: #f5f0ea; --occgrey: #f2f2f2; --white: #fff; } /* Text
+              Styling */ h2 { font-size: 18px; font-weight: bold; display:
+              block; margin: 0.35em 0; } @media screen and (max-width: 600px) {
+              .content { width: 100% !important; display: block !important;
+              padding: 20px !important; } .header, .body, .footer { padding:
+              20px !important; } } &lt;/style&gt; &lt;/head&gt; &lt;body
+              style="font-family: Arial, Helvetica, sans-serif;"&gt; &lt;table
+              border="0" cellpadding="0" cellspacing="0" style="font-family:
+              Arial, Helvetica, sans-serif; background-color: var(--occgrey);"
+              width="100%"&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td align="center"
+              style="padding: 20px;"&gt;&nbsp; &lt;table border="0"
+              cellpadding="0" cellspacing="0" class="content"
+              style="border-collapse: collapse; border: 1px solid #002d6a;
+              background-color: #ffffff !important;" width="700"&gt;&lt;!--
+              Header --&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td class="header"
+              style="background-color: #ffffff !important; padding: 15px
+              10px;"&gt; &lt;div style="display: flex;justify-content:center;
+              padding: 20 0;"&gt; &lt;div class="header-image" style="color:
+              #fff !important; font-size: 45px;background-color: #fff
+              !important; padding: 0 10px;"&gt; &lt;img alt="Orange Coast
+              College Logo" height="50"
+              src="https://crm.cccd.edu/www/images/OCC%20Slate%20Support/Logo/logo.png"
+              style="display:block;" /&gt; &lt;/div&gt; &lt;/div&gt; &lt;div
+              style="border-bottom: 1px solid #002d6a; width: 650px; display:
+              flex; justify-content: center; width: 100%; padding: 10px 0;"&gt;
+              &lt;/div&gt; &lt;/td&gt; &lt;/tr&gt; &lt;!-- Email Body --&gt;
+              &lt;tr class="email-body"&gt; &lt;td style=" padding: 40px;
+              text-align: left; font-size: 16px; line-height: 1.6; color:
+              var(--text); background-color: #fff !important;"&gt; &lt;p
+              style="text-align: right;"&gt; &lt;strong&gt;Student ID:
+              &lt;/strong&gt;{{student-id}} &lt;/p&gt; &lt;p&gt; Hi
+              {{sys-preferred}},&lt;br /&gt; You can use this general template
+              for your email communications. This template was proudly made with
+              pure HTML. 😎&lt;br /&gt; &lt;br /&gt; You can edit this by
+              clicking "Edit Message." This template is built so you don't need
+              to use any code or 3rd party websites to design an email.
+              &lt;/p&gt; &lt;h2&gt; Lorem ipsum &lt;/h2&gt; &lt;!--Summary--&gt;
+              &lt;div class="mini-container" style="border-left: 10px solid
+              #f99239; padding: 2px 8px; background-color: #e0e0e079; font-size:
+              14px;"&gt; &lt;h3 style="background-color: #002d6a; color:
+              #ffffff; padding: 10px;"&gt; Lorem ipsum dolor &lt;/h3&gt;
+              &lt;p&gt; Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Minima quis a incidunt ipsam expedita voluptas consequuntur
+              beatae, consequatur aliquid laudantium eaque quia iure consectetur
+              debitis molestias veritatis eveniet vel enim. &lt;/p&gt;
+              &lt;/div&gt; &nbsp;&lt;br /&gt; &lt;!--Button--&gt; &lt;div
+              class="button" style="margin: 10px 0;"&gt; &lt;a href="#" style="
+              background-color: #002d6a; padding: 20px; width: fit-content;
+              color: #ffffff !important; font-weight: bold;"&gt;Insert Your Link
+              Here&lt;/a&gt; &lt;/div&gt; &lt;br /&gt; &lt;!--Next Steps--&gt;
+              &lt;h2&gt; Lorem ipsum: &lt;/h2&gt; &lt;ul&gt; &lt;li&gt; Lorem
+              ipsum dolor, sit amet consectetur adipisicing elit. &lt;/li&gt;
+              &lt;li&gt; Labore assumenda voluptates facilis neque dolor veniam
+              error exercitationem beatae. &lt;/li&gt; &lt;/ul&gt; &nbsp;
+              &lt;!--Signature--&gt; &lt;p&gt; P.S. Don't forget to edit the
+              Footer at the end of this email! Make sure to update it with your
+              Department Name, Office Location, and Contact Info (Email, Phone,
+              etc.) &lt;/p&gt; &lt;div style="border-top: 7px solid #f99239;
+              width: 50px; margin: 10px 0;"&gt; &lt;/div&gt;
+              &lt;strong&gt;{{template-department-name}}&lt;/strong&gt;&lt;br
+              /&gt; {{template-location}}&lt;br /&gt; Email: &lt;a
+              href="#"&gt;{{template-department-email}}&lt;/a&gt;&lt;br /&gt;
+              Website: &lt;a
+              href="#"&gt;{{template-department-link}}&lt;/a&gt;&lt;/td&gt;
+              &lt;/tr&gt; &lt;!-- Footer --&gt; &lt;tr&gt; &lt;td class="footer"
+              style="background-color: #002d6a; padding: 40px; text-align:
+              center; color: white; font-size: 12px;"&gt; &lt;div
+              class="social-icons" style="justify-content: center; display:
+              flex; flex-direction: row; gap: 20px; padding: 0 0 10 0;"&gt;
+              &lt;a href="https://orangecoastcollege.edu/"&gt;&lt;img
+              height="25"
+              src="https://crm.cccd.edu/www/images/OCC%20Slate%20Support/Social%20Icons/Web%20(White).png"
+              /&gt;&lt;/a&gt;&lt;a
+              href="https://www.facebook.com/orangecoastcollege"&gt;&lt;img
+              height="25"
+              src="https://crm.cccd.edu/www/images/OCC%20Slate%20Support/Social%20Icons/Facebook%20(White).png"
+              /&gt;&lt;/a&gt;&lt;a
+              href="https://www.instagram.com/orangecoastcollege/"&gt;&lt;img
+              height="25"
+              src="https://crm.cccd.edu/www/images/OCC%20Slate%20Support/Social%20Icons/Instagram%20(White).png"
+              /&gt;&lt;/a&gt;&lt;a href="https://x.com/orangecoast"&gt;&lt;img
+              height="25"
+              src="https://crm.cccd.edu/www/images/OCC%20Slate%20Support/Social%20Icons/Twitter%20(White).png"
+              /&gt;&lt;/a&gt; &lt;/div&gt; Orange Coast College | 2701 Fairview
+              Road Costa Mesa, California 92626 | (714) 432-5072&lt;/td&gt;
+              &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;/td&gt; &lt;/tr&gt;
+              &lt;/tbody&gt; &lt;/table&gt; &lt;/body&gt; &lt;/html&gt;
             </code>
           </section>
         </section>

@@ -36,23 +36,35 @@ code {
   color: black;
 }
 
-pre {
+iframe.mailing{
+  /* 90% to compensate for padding in .card-container */
+  width: 90%;
+  height: 510px;
   margin: 0;
   padding: 0;
-}
-
-.main-container-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-auto-rows: auto;
-  background-color: #2F1847;
-  padding: 70px 10px 10px 10px;
 }
 
 .header {
   background-color: rgb(249, 146, 57);
   padding: 10px;
   margin: 0;
+}
+
+/* Grid */
+.main-container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: auto;
+  background-color: var(--occblue);
+  padding: 70px 10px 10px 10px;
+}
+
+#grid-widgets {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+#grid-mailings {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 /* Navbar */
@@ -62,7 +74,7 @@ pre {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: #2F1847;
+  background-color: var(--occorange);
   position: fixed;
   top: 0;
   width: 100%;
@@ -75,7 +87,7 @@ pre {
 .navbar a {
   float: left;
   display: block;
-  color: rgb(249, 146, 57);
+  color: #FEFADC;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -89,7 +101,7 @@ pre {
 
 /*Individual Widget Information Cards*/
 
-.widget-container {
+.card-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,31 +116,52 @@ pre {
   max-height: 400px;
 }
 
-.widget-demo {
+.widget-container {
+  height: 400px;
+  max-height: 400px;
+}
+
+.mailing-container {
+  height: 650px;
+  max-height: 650px;
+}
+
+.demo {
   height: 270px;
   max-height: 270px;
   margin: 0 0 20px 0;
   padding: 0;
-  width: 99%;
+  width: 100%;
   overflow-y: auto;
 }
 
-.widget-code-container {
+.demo.widget {
+  height: 270px;
+  max-height: 270px;
+}
+
+.demo.mailing {
+  height: 520px;
+  max-height: 520px;
+}
+
+.code-container {
   width: 100%;
+  height: 100px;
   display: flex;
   flex-direction: row;
 }
 
-.widget-code {
-  height: 100px;
+.code-snippet {
+  height: 100%;
   border: 1px solid black;
   overflow-y: auto;
-  width: 99%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
-.widget-code-copy {
+.code-snippet-copy {
   width: 150px;
   border-radius: 8px;
   font-family: monospace;
