@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="code-snippets.js" defer></script>
+    <title>Mailing Templates</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="index.html">Widget</a>
+      <a href="mailings.html">Mailing</a>
+    </div>
+
+    <div class="main-container-grid">
+      <!-- Widget #1 -->
+      <section class="widget-container">
+        <section class="widget-demo">
+          <p
+            style="
+              padding: 6px 10px;
+              background-color: #002d6a;
+              color: #ffffff;
+              font-size: 15px;
+              border-radius: 6px;
+            "
+          >
+            <b>Student Information</b>
+          </p>
+        </section>
+
+        <section class="widget-code-container">
+          <section class="widget-code">
+            <p>
+              &lt;p style="padding: 6px 10px; background-color: #002d6a; color:
+              #ffffff; font-size: 15px; border-radius: 6px;"&gt;
+              &lt;b&gt;Student Information&lt;/b&gt; &lt;/p&gt;
+            </p>
+          </section>
+
+          <section class="widget-code-copy">
+            <button class="copy-btn" onclick="copyHidden(this)">Copy</button>
+            <code class="hidden-code">
+              &lt;p style="padding: 6px 10px; background-color: #002d6a; color:
+              #ffffff; font-size: 15px; border-radius: 6px;"&gt;
+              &lt;b&gt;Student Information&lt;/b&gt; &lt;/p&gt;
+            </code>
+          </section>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>

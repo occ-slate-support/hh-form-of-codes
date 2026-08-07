@@ -1,17 +1,32 @@
+:root {
+  --occblue: #002d6a;
+
+  --occorange: #f99239;
+
+  --text: #1f2937;
+
+  --muted: #5b6573;
+
+  --bg: #f4f8fc;
+
+  --white: #ffffff;
+
+  --border: #dbe3ee;
+}
+
 body {
+  font-family: monospace;
   padding: 0;
   margin: 0;
 }
 
 h1 {
   text-align: center;
-  font-family: monospace;
   font-size: 30px;
   background-color: rgb(249, 146, 57);
 }
 
 p {
-  font-family: monospace;
   font-size: 20px;
   margin: 0;
   padding: 0;
@@ -26,12 +41,12 @@ pre {
   padding: 0;
 }
 
-#main-container {
+.main-container-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-auto-rows: auto;
-  background-color: #a8d0e6;
-  padding: 10px;
+  background-color: #2F1847;
+  padding: 70px 10px 10px 10px;
 }
 
 .header {
@@ -39,6 +54,40 @@ pre {
   padding: 10px;
   margin: 0;
 }
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #2F1847;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  z-index: 1;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(249, 146, 57);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/*Individual Widget Information Cards*/
 
 .widget-container {
   display: flex;
