@@ -80,6 +80,7 @@ iframe.mailing{
   width: 100%;
   align-items: center;
   justify-content: center;
+  gap: 30px;
   height: 70px;
   z-index: 1;
 }
@@ -99,6 +100,11 @@ iframe.mailing{
 .nav-page-links:hover {
   background: rgba(255, 255, 255, 0.18);
   color: #FEFEDC;
+}
+
+.nav-page-links.active {
+  background: #FEFEDC;
+  color: #E8873B;
 }
 
 /*Individual Widget Information Cards*/
