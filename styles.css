@@ -126,8 +126,6 @@ iframe.mailing{
   border-radius: 8px;
   background-color: white;
   border: 1px solid #ccc;
-  height: 400px;
-  max-height: 400px;
 }
 
 .widget-container {
