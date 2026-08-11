@@ -41,7 +41,7 @@ code[class*="language-html"] {
   overflow-x: hidden;
 }
 
-iframe.mailing {
+iframe.mailing{
   /* 90% to compensate for padding in .card-container */
   width: 90%;
   height: 510px;
@@ -94,25 +94,23 @@ iframe.mailing {
 .nav-page-links {
   float: left;
   display: block;
-  color: #fefedc;
+  color: #FEFEDC;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   border-radius: 6px;
-  transition:
-    background 0.4s ease,
-    color 0.4s ease;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
 .nav-page-links:hover {
   background: rgba(255, 255, 255, 0.18);
-  color: #fefedc;
+  color: #FEFEDC;
 }
 
 .nav-page-links.active {
-  background: #fefedc;
-  color: #e8873b;
+  background: #FEFEDC;
+  color: #E8873B;
 }
 
 /*Individual Widget Information Cards*/
