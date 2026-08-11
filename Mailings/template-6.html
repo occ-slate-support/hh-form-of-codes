@@ -1,0 +1,137 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">:root {
+    --text: #00183a;
+    --occblue: #002d6a;
+    --occorange: #f99239;
+    --occtan: #f5f0ea;
+    --occgrey: #f2f2f2;
+    --white: #fff;
+  }
+
+
+
+/* Text Styling */
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 0.35em 0;
+}
+
+/* Container Styling */
+
+/* Web Responsiveness */
+
+          @media screen and (max-width: 600px) {
+          .content {
+              width: 100% !important;
+              display: block !important;
+              padding: 10px !important;
+          }
+          .header, .body, .footer {
+              padding: 20px !important;
+          }
+        }
+    </style>
+  </head>
+  <body style="zoom: 0.75; font-family: Arial, Helvetica, sans-serif;">
+    <table border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif; background-color: var(--occblue); " width="100%">
+      <tbody>
+        <tr>
+          <td align="center" style="padding: 20px;">
+          <table cellpadding="0" cellspacing="0" class="content" style="border-radius: 20px; border-collapse: separate; border-spacing: 0; background-color: #ffffff !important;" width="700"><!-- Header -->
+            <tbody>
+              <tr>
+                <td class="header" style="background-color: #ffffff !important; padding: 15px 10px;">
+                <div style="display: flex;justify-content:center; padding: 20 0;">
+                  <div class="header-image" style="color: #fff !important; font-size: 45px;background-color: #fff !important; padding: 0 10px;">
+                    <img alt="Orange Coast College Logo" height="50" src="https://crm.cccd.edu/www/images/OCC%20Slate%20Support/Logo/logo.png" style="display:block;" />
+                  </div>
+                </div>
+                </td>
+              </tr>
+              <!-- Email Body -->
+              <tr class="email-body">
+                <td style=" padding: 40px;
+                                    text-align: left;
+                                    font-size: 16px;
+                                    line-height: 1.6;
+                                    color: var(--text); background-color: #fff !important;">
+                <p style="text-align: right;">
+                  <strong>Student ID: </strong>{{student-id}}
+                </p>
+
+                <p>
+                  Hi {{sys-preferred}},<br />
+                  <br />
+                  Your appointment has been confirmed! Please see details below.
+                </p>
+                <br />
+                <!--Summary-->
+                <div class="mini-container" style="border-left: 10px solid #f99239; padding: 2px 8px; background-color: #e0e0e079; font-size: 14px;">
+                  <h3 style="text-align: center;">
+                    Appointment Details:
+                  </h3>
+
+                  <p>
+                    <strong>📅 Event Date:</strong> {{Form-Date | date: 'dddd, MMMM d, yyyy'}}
+                  </p>
+
+                  <p>
+                    <strong>⌚ Time:</strong> {{Form-Date | date: 'h:mm tt'}} - {{Form-End-Date | date: 'h:mm tt'}}
+                  </p>
+
+                  <p>
+                    <strong>📍 Location:&nbsp;</strong>{{Form-Location}}
+                  </p>
+
+                  <p>
+                    <strong>❓ Additional Information:</strong>&nbsp; Please have your Student ID Card with you.
+                  </p>
+                </div>
+                &nbsp;<br />
+                <br />
+                <!--Button-->
+                <div class="button" style="margin: 10px 0;">
+                  <a href="{{Form-Link}}" style=" background-color: #002d6a; padding: 20px; width: fit-content; color: #ffffff !important; font-weight: bold;">Edit Appointment Registration</a>
+                </div>
+                <br />
+                &nbsp; <!--Signature-->
+                <p>
+                  P.S. Don't forget to edit the Footer at the end of this email! Make sure to update it with your Department Name, Office Location, and Contact Info (Email, Phone, etc.)
+                </p>
+
+                <div style="border-top: 7px solid #f99239; width: 50px; margin: 10px 0;">
+                </div>
+                <strong>{{template-department-name}}</strong><br />
+                {{template-location}}<br />
+                Email: <a href="#">{{template-department-email}}</a><br />
+                Website: <a href="#">{{template-department-link}}</a></td>
+              </tr>
+              <!-- Footer -->
+              <tr>
+                <td class="footer" style="background-color: #002d6a; padding: 30px; text-align: center; color: #ffffff; font-size: 12px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td style="padding: 10px 10px;"><a href="https://orangecoastcollege.edu/" target="_blank"><img alt="Website" height="24" src="https://crm.cccd.edu/www/images/OCC%20Slate%20Support/Social%20Icons/Web%20(White).png" style="display:block; border:0; outline:none; text-decoration:none;" width="24" /></a></td>
+                      <td style="padding: 10px 10px;"><a href="https://www.facebook.com/orangecoastcollege" target="_blank"><img alt="Facebook" height="24" src="https://crm.cccd.edu/www/images/OCC%20Slate%20Support/Social%20Icons/Facebook%20(White).png" style="display:block; border:0; outline:none; text-decoration:none;" width="24" /></a></td>
+                      <td style="padding: 10px 10px;"><a href="https://www.instagram.com/orangecoastcollege/" target="_blank"><img alt="Instagram" height="24" src="https://crm.cccd.edu/www/images/OCC%20Slate%20Support/Social%20Icons/Instagram%20(White).png" style="display:block; border:0; outline:none; text-decoration:none;" width="24" /></a></td>
+                      <td style="padding: 10px 10px;"><a a="" href="https://x.com/orangecoast" target="_blank"><img alt="X" height="24" src="https://crm.cccd.edu/www/images/OCC%20Slate%20Support/Social%20Icons/Twitter%20(White).png" style="display:block; border:0; outline:none; text-decoration:none;" width="24" /></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+                Orange Coast College | 2701 Fairview Road Costa Mesa, CA 92626 | (714) 432-5072</td>
+              </tr>
+            </tbody>
+          </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
