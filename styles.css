@@ -43,11 +43,11 @@ code[class*="language-html"] {
 
 iframe.mailing{
   /* 90% to compensate for padding in .card-container */
-  width: 90%;
-  height: 510px;
-  margin: 0;
-  padding: 0;
-  border: 3px black solid;
+  width: 100%;
+  height: 600px;
+  margin: 0px;
+  padding: 0px;
+  border: hidden;
   border-radius: 8px;
 }
 
@@ -60,7 +60,6 @@ iframe.mailing{
 /* Grid */
 .main-container-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-auto-rows: auto;
   background-color: #eef1f6;
   padding: 70px 10px 10px 10px;
@@ -71,7 +70,7 @@ iframe.mailing{
 }
 
 #grid-mailings {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 /* Navbar */
@@ -117,12 +116,11 @@ iframe.mailing{
 
 .card-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: 10px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
   background-color: white;
   border: 1px solid #ccc;
@@ -131,57 +129,89 @@ iframe.mailing{
 .widget-container {
   height: 400px;
   max-height: 400px;
+  flex-direction: column;
 }
 
 .mailing-container {
   height: 650px;
   max-height: 650px;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .demo {
-  height: 270px;
-  max-height: 270px;
-  margin: 0 0 20px 0;
-  padding: 0;
+  padding: 0px;
   width: 100%;
   overflow-y: auto;
 }
 
 .demo.widget {
+  margin: 0 0 20px 0;
   height: 270px;
   max-height: 270px;
 }
 
 .demo.mailing {
-  height: 520px;
-  max-height: 520px;
+  margin: 0px;
+  height: 610px;
+  max-height: 610px;
+  border: 3px black solid;
+  border-radius: 8px; 
+  flex: 1;
 }
 
 .code-container {
   width: 100%;
-  height: 100px;
   display: flex;
+  flex: 1;
+}
+
+.code-container.widget {
   flex-direction: row;
+  height: 100px;
+}
+
+.code-container.mailing {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  gap: 30px;
 }
 
 .code-snippet {
-  height: 100%;
   border: 1px solid black;
   background-color: #2d2d2d;
   border-radius: 8px;
   overflow-y: auto;
-  width: 100%;
   margin: 0;
   padding: 0;
+  flex: 4;
+}
+
+.code-snippet.widget {
+  height: 100%;
+}
+
+.code-snippet.mailing {
+  height: 500px;
 }
 
 .code-snippet-copy {
-  width: 150px;
+  align-items: center;
+  justify-content: center;
   border-radius: 8px;
-  font-family: monospace;
   border: 1px solid #ccc;
-  height: 100%;
+  flex: 1;
+}
+
+.code-snippet-copy.widget {
   margin-left: 10px;
+  width: 150px;
+}
+
+.code-snippet-copy.mailing {
+  width: 300px;
 }
 
 .copy-btn {
