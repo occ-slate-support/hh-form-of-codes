@@ -56,6 +56,7 @@ section.template-information.mailing {
   padding: 0px;
   margin: 0px;
   font-size: 35px;
+  text-align: center;
 }
 
 iframe.mailing {
@@ -130,7 +131,6 @@ iframe.mailing {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   margin: 10px;
   padding: 20px;
   border-radius: 8px;
@@ -167,6 +167,7 @@ iframe.mailing {
   height: 270px;
   max-height: 270px;
   flex: 3;
+  width: 100%;
 }
 
 .demo.mailing {
