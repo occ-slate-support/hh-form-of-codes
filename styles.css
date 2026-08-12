@@ -20,12 +20,6 @@ body {
   margin: 0;
 }
 
-h1 {
-  text-align: center;
-  font-size: 30px;
-  background-color: rgb(249, 146, 57);
-}
-
 p {
   font-size: 20px;
   margin: 0;
@@ -41,30 +35,36 @@ code[class*="language-html"] {
   overflow-x: hidden;
 }
 
-section.template-information {
+section.template-information.widget {
+  height: 30px;
+  padding: 10px;
+  margin: 0px;
+  flex: 1;
+}
+
+section.template-information.mailing {
   height: 30px;
   padding: 10px;
   margin: 0px;
 }
 
-.template-indicator h2 {
+.template-information.widget h2 {
+  font-size: 24px;
+}
+
+.template-information.mailing h2 {
   padding: 0px;
   margin: 0px;
+  font-size: 35px;
 }
 
 iframe.mailing {
   width: 100%;
-  height: 800px;
+  height: 100%;
   margin: 0px;
   padding: 0px;
   border: hidden;
   border-radius: 8px;
-}
-
-.header {
-  background-color: rgb(249, 146, 57);
-  padding: 10px;
-  margin: 0;
 }
 
 /* Grid */
@@ -142,13 +142,19 @@ iframe.mailing {
   height: 400px;
   max-height: 400px;
   flex-direction: column;
+  gap: 20px;
+  display: flex;
 }
 
 .mailing-container {
-  height: 850px;
-  max-height: 900px;
+  height: 700px;
+  max-height: 700px;
   flex-direction: row;
   gap: 30px;
+}
+
+.description.mailing {
+  flex: 1;
 }
 
 .demo {
@@ -157,9 +163,10 @@ iframe.mailing {
 
 .demo.widget {
   padding: 0px;
-  margin: 0 0 20px 0;
+  margin: 0px;
   height: 270px;
   max-height: 270px;
+  flex: 3;
 }
 
 .demo.mailing {
@@ -176,19 +183,19 @@ iframe.mailing {
 
 .code-container {
   display: flex;
-  flex: 1;
+  flex: 2;
 }
 
 .code-container.widget {
   flex-direction: row;
   height: 100px;
+  flex: 2;
 }
 
 .code-container.mailing {
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 800px;
+  height: 100%;
   gap: 30px;
 }
 
@@ -199,15 +206,15 @@ iframe.mailing {
   overflow-y: auto;
   margin: 0;
   padding: 0;
-  flex: 4;
 }
 
 .code-snippet.widget {
-  height: 100%;
+  flex: 4;
 }
 
 .code-snippet.mailing {
   height: 500px;
+  flex: 9;
 }
 
 .code-snippet-copy {
@@ -228,25 +235,25 @@ iframe.mailing {
 }
 
 .copy-btn {
-  background: #fefedc;
+  background: #fef3c7;
   border-radius: 8px;
   font-family: monospace;
   border: 1px solid #ccc;
   width: 100%;
   padding: 10px;
   height: 100%;
+  transition: background 0.2s ease;
 }
 
 .copy-btn:hover {
-  background: rgb(249, 146, 57);
+  background: #f59e0b;
   opacity: 0.8;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
 
 .hidden-code {
   display: none;
 }
 
-.description.mailing {
-  flex: 1;
-}
+
