@@ -41,10 +41,20 @@ code[class*="language-html"] {
   overflow-x: hidden;
 }
 
-iframe.mailing{
-  /* 90% to compensate for padding in .card-container */
+section.template-information {
+  height: 30px;
+  padding: 10px;
+  margin: 0px;
+}
+
+.template-indicator h2 {
+  padding: 0px;
+  margin: 0px;
+}
+
+iframe.mailing {
   width: 100%;
-  height: 600px;
+  height: 800px;
   margin: 0px;
   padding: 0px;
   border: hidden;
@@ -93,23 +103,25 @@ iframe.mailing{
 .nav-page-links {
   float: left;
   display: block;
-  color: #FEFEDC;
+  color: #fefedc;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   border-radius: 6px;
-  transition: background 0.4s ease, color 0.4s ease;
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
 }
 
 .nav-page-links:hover {
   background: rgba(255, 255, 255, 0.18);
-  color: #FEFEDC;
+  color: #fefedc;
 }
 
 .nav-page-links.active {
-  background: #FEFEDC;
-  color: #E8873B;
+  background: #fefedc;
+  color: #e8873b;
 }
 
 /*Individual Widget Information Cards*/
@@ -133,35 +145,36 @@ iframe.mailing{
 }
 
 .mailing-container {
-  height: 650px;
-  max-height: 650px;
+  height: 850px;
+  max-height: 900px;
   flex-direction: row;
   gap: 30px;
 }
 
 .demo {
-  padding: 0px;
-  width: 100%;
   overflow-y: auto;
 }
 
 .demo.widget {
+  padding: 0px;
   margin: 0 0 20px 0;
   height: 270px;
   max-height: 270px;
 }
 
 .demo.mailing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
   margin: 0px;
-  height: 610px;
-  max-height: 610px;
+  height: 100%;
   border: 3px black solid;
-  border-radius: 8px; 
-  flex: 1;
+  border-radius: 8px;
+  flex: 2;
 }
 
 .code-container {
-  width: 100%;
   display: flex;
   flex: 1;
 }
@@ -175,7 +188,7 @@ iframe.mailing{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 600px;
+  height: 800px;
   gap: 30px;
 }
 
@@ -215,7 +228,7 @@ iframe.mailing{
 }
 
 .copy-btn {
-  background: rgb(249, 146, 57);
+  background: #fefedc;
   border-radius: 8px;
   font-family: monospace;
   border: 1px solid #ccc;
@@ -232,4 +245,8 @@ iframe.mailing{
 
 .hidden-code {
   display: none;
+}
+
+.description.mailing {
+  flex: 1;
 }
