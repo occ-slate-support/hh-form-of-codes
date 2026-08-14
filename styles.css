@@ -219,11 +219,13 @@ iframe.mailing {
 }
 
 .code-snippet-copy {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  border: 1px solid #ccc;
   flex: 1;
+  gap: 10px;
 }
 
 .code-snippet-copy.widget {
@@ -232,18 +234,57 @@ iframe.mailing {
 }
 
 .code-snippet-copy.mailing {
-  width: 300px;
+  width: 100%;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+dialog.snippet-modal {
+  border: none;
+  border-radius: 8px;
+  padding: 0px;
+  width: 800px;
+  max-height: 80%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.zoom-btn {
+  background: #fef3c7;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px;
+  transition: background 0.2s ease;
+  flex: 1;
+}
+
+.zoom-btn.mailing {
+  width: 50%;
+}
+
+.zoom-btn:hover {
+  background: #f59e0b;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: background 0.2s ease;
 }
 
 .copy-btn {
   background: #fef3c7;
   border-radius: 8px;
-  font-family: monospace;
   border: 1px solid #ccc;
   width: 100%;
   padding: 10px;
-  height: 100%;
   transition: background 0.2s ease;
+  flex: 1;
+}
+
+.copy-btn.mailing {
+  width: 50%;
 }
 
 .copy-btn:hover {

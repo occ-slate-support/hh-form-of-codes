@@ -1,3 +1,5 @@
+// Copy functionality
+
 let resetTimer = null;
 
 function copyHidden(button) {
@@ -23,3 +25,21 @@ function copyHidden(button) {
     }, 2000);
   });
 }
+
+// Zoom-in functionality
+
+const modal = document.querySelector(".snippet-modal");
+const modalCode = modal.querySelector(".modal-code");
+
+document.querySelectorAll(".zoom-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const code = btn.closest(".code-container").querySelector(".code-snippet code").textContent;
+    modalCode.textContent = code;
+    Prism.highlightElement(modalCode);
+    modal.showModal();
+  });
+});
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) modal.close();
+})
