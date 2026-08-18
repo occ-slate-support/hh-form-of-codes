@@ -184,6 +184,7 @@ iframe.mailing {
 
 .code-container {
   display: flex;
+  width: 100%;
   flex: 2;
 }
 
@@ -256,10 +257,13 @@ dialog::backdrop {
   background: #fef3c7;
   border-radius: 8px;
   border: 1px solid #ccc;
-  width: 100%;
   padding: 10px;
   transition: background 0.2s ease;
   flex: 1;
+}
+
+.zoom-btn.widget {
+  width: 100%;
 }
 
 .zoom-btn.mailing {
@@ -277,10 +281,13 @@ dialog::backdrop {
   background: #fef3c7;
   border-radius: 8px;
   border: 1px solid #ccc;
-  width: 100%;
   padding: 10px;
   transition: background 0.2s ease;
   flex: 1;
+}
+
+.copy-btn.widget {
+  width: 100%;
 }
 
 .copy-btn.mailing {
