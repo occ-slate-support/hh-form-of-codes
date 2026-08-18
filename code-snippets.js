@@ -1,33 +1,49 @@
-// Card Template (Widget)
+// Universal Card Template Function
 
+const widgetGallery = document.getElementById("grid-widgets");
 const widgetTemplate = document.getElementById("template-widget-card");
-const gallery = document.getElementById("grid-widgets");
 
-async function renderWidgets() {
-  const res = await fetch("widgets.json");
-  const widgets = await res.json();
+const mailingGallery = document.getElementById("grid-mailings");
+const mailingTemplate = document.getElementById("template-mailing-card");
 
-  for (const widget of widgets) {
-    const node = widgetTemplate.content.cloneNode(true);
+async function renderFromTemplate({ url, template, gallery, fill }) {
+  const res = await fetch(url);
+  const items = await res.json();
 
-    node.querySelector(".template-information h2").textContent = widget.title;
-    node.querySelector(".demo").innerHTML = widget.code;
-    node.querySelector(".code-snippet code").textContent = widget.code;
-    node.querySelector(".hidden-code").textContent = widget.code;
+  gallery.replaceChildren();
 
-    node.querySelector(".zoom-btn").textContent = widget.zoomButtonText;
-    node.querySelector(".copy-btn").textContent = widget.copyButtonText;
-
+  for (const item of items) {
+    const node = template.content.cloneNode(true);
+    fill(node, item);
     gallery.append(node);
   }
 
   Prism.highlightAllUnder(gallery);
 }
 
-renderWidgets();
+renderFromTemplate({
+  url: "widgets.json",
+  template: widgetTemplate,
+  gallery: widgetGallery,
+  fill: (node, item) => {
+    node.querySelector(".template-information h2").textContent = item.title;
+    node.querySelector(".demo").innerHTML = item.code;
+    node.querySelector(".code-snippet code").textContent = item.code;
+    node.querySelector(".hidden-code").textContent = item.code;
+  },
+});
 
-// Card Template (Mailing)
-
+renderFromTemplate({
+  url: "mailings.json",
+  template: mailingTemplate,
+  gallery: mailingGallery,
+  fill: (node, item) => {
+    node.querySelector(".template-information h2").textContent = item.title;
+    node.querySelector(".demo iframe").srcdoc = item.demo;
+    node.querySelector(".code-snippet code").textContent = item.code;
+    node.querySelector(".hidden-code").textContent = item.code;
+  },
+});
 
 // Copy functionality
 
@@ -66,7 +82,9 @@ document.addEventListener("click", (e) => {
   const btn = e.target.closest(".zoom-btn");
   if (!btn) return;
 
-  const code = btn.closest(".code-container").querySelector(".code-snippet code").textContent;
+  const code = btn
+    .closest(".code-container")
+    .querySelector(".code-snippet code").textContent;
   modalCode.textContent = code;
   Prism.highlightElement(modalCode);
   modal.showModal();
@@ -74,4 +92,4 @@ document.addEventListener("click", (e) => {
 
 modal.addEventListener("click", (e) => {
   if (e.target === modal) modal.close();
-})
+});

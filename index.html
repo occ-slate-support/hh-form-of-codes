@@ -17,23 +17,20 @@
   </head>
   <body>
     <div class="navbar">
-      <a href="temp-2.html" class="nav-page-links">Home</a>
+      <a href="#" class="nav-page-links">Home</a>
       <a href="index.html" class="nav-page-links active">Widget</a>
       <a href="mailings.html" class="nav-page-links">Mailing</a>
     </div>
     <div class="main-container-grid" id="grid-widgets">
-
       <!-- Code Snippet Cards via Template-->
 
       <template id="template-widget-card">
         <section class="card-container widget-container">
-
           <section class="template-information widget">
             <h2></h2>
           </section>
 
-          <section class="demo widget">
-          </section>
+          <section class="demo widget"></section>
 
           <section class="code-container widget">
             <section class="code-snippet widget">
@@ -41,21 +38,21 @@
             </section>
 
             <section class="code-snippet-copy widget">
-              <button class="zoom-btn widget"></button>
-              <button class="copy-btn widget" onclick="copyHidden(this)"></button>
+              <button class="zoom-btn widget">Zoom</button>
+              <button class="copy-btn widget" onclick="copyHidden(this)">
+                Copy
+              </button>
               <code class="hidden-code"></code>
             </section>
           </section>
-
         </section>
       </template>
-
     </div>
 
     <!-- Dialog box for code snippet zoom-->
 
     <dialog class="snippet-modal">
-              <pre><code class="language-html modal-code"></code></pre>
+      <pre><code class="language-html modal-code"></code></pre>
     </dialog>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
