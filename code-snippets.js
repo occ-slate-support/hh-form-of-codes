@@ -1,10 +1,13 @@
+const tabs = ["index", "widget", "mailings"];
+
+function getCurrentPage() {
+  const file = window.location.pathname.split("/").pop();
+  const page = file.replace(".html", "") || "index";
+  return tabs.includes(page) ? page : tabs[0];
+}
+
+const activeTab = getCurrentPage();
 // Universal Card Template Function
-
-const widgetGallery = document.getElementById("grid-widgets");
-const widgetTemplate = document.getElementById("template-widget-card");
-
-const mailingGallery = document.getElementById("grid-mailings");
-const mailingTemplate = document.getElementById("template-mailing-card");
 
 async function renderFromTemplate({ url, template, gallery, fill }) {
   const res = await fetch(url);
@@ -21,29 +24,35 @@ async function renderFromTemplate({ url, template, gallery, fill }) {
   Prism.highlightAllUnder(gallery);
 }
 
-renderFromTemplate({
-  url: "widgets.json",
-  template: widgetTemplate,
-  gallery: widgetGallery,
-  fill: (node, item) => {
-    node.querySelector(".template-information h2").textContent = item.title;
-    node.querySelector(".demo").innerHTML = item.code;
-    node.querySelector(".code-snippet code").textContent = item.code;
-    node.querySelector(".hidden-code").textContent = item.code;
-  },
-});
-
-renderFromTemplate({
-  url: "mailings.json",
-  template: mailingTemplate,
-  gallery: mailingGallery,
-  fill: (node, item) => {
-    node.querySelector(".template-information h2").textContent = item.title;
-    node.querySelector(".demo iframe").srcdoc = item.demo;
-    node.querySelector(".code-snippet code").textContent = item.code;
-    node.querySelector(".hidden-code").textContent = item.code;
-  },
-});
+if (activeTab === tabs[1]) {
+  const widgetGallery = document.getElementById("grid-widgets");
+  const widgetTemplate = document.getElementById("template-widget-card");
+  renderFromTemplate({
+    url: "widgets.json",
+    template: widgetTemplate,
+    gallery: widgetGallery,
+    fill: (node, item) => {
+      node.querySelector(".template-information h2").textContent = item.title;
+      node.querySelector(".demo").innerHTML = item.code;
+      node.querySelector(".code-snippet code").textContent = item.code;
+      node.querySelector(".hidden-code").textContent = item.code;
+    },
+  });
+} else if (activeTab === tabs[2]) {
+  const mailingGallery = document.getElementById("grid-mailings");
+  const mailingTemplate = document.getElementById("template-mailing-card");
+  renderFromTemplate({
+    url: "mailings.json",
+    template: mailingTemplate,
+    gallery: mailingGallery,
+    fill: (node, item) => {
+      node.querySelector(".template-information h2").textContent = item.title;
+      node.querySelector(".demo iframe").srcdoc = item.demo;
+      node.querySelector(".code-snippet code").textContent = item.code;
+      node.querySelector(".hidden-code").textContent = item.code;
+    },
+  });
+}
 
 // Copy functionality
 
@@ -75,21 +84,35 @@ function copyHidden(button) {
 
 // Zoom-in functionality
 
-const modal = document.querySelector(".snippet-modal");
-const modalCode = modal.querySelector(".modal-code");
+if (["widget", "mailings"].includes(activeTab)) {
+  
+  let modal;
 
-document.addEventListener("click", (e) => {
-  const btn = e.target.closest(".zoom-btn");
-  if (!btn) return;
+  switch (activeTab) {
+    case tabs[1]:
+      modal = document.querySelector(".snippet-modal-widget");
+      break;
+    case tabs[2]:
+      modal = document.querySelector(".snippet-modal-mailing");
+      break;
+  }
+  console.log(modal);
 
-  const code = btn
-    .closest(".code-container")
-    .querySelector(".code-snippet code").textContent;
-  modalCode.textContent = code;
-  Prism.highlightElement(modalCode);
-  modal.showModal();
-});
+  const modalCode = modal.querySelector(".modal-code");
 
-modal.addEventListener("click", (e) => {
-  if (e.target === modal) modal.close();
-});
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".zoom-btn");
+    if (!btn) return;
+
+    const code = btn
+      .closest(".code-container")
+      .querySelector(".code-snippet code").textContent;
+    modalCode.textContent = code;
+    Prism.highlightElement(modalCode);
+    modal.showModal();
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) modal.close();
+  });
+}

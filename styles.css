@@ -240,7 +240,16 @@ iframe.mailing {
   align-items: stretch;
 }
 
-dialog.snippet-modal {
+dialog.snippet-modal-widget {
+  border: none;
+  border-radius: 8px;
+  padding: 0px;
+  width: 800px;
+  max-height: 80%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+dialog.snippet-modal-mailing {
   border: none;
   border-radius: 8px;
   padding: 0px;
