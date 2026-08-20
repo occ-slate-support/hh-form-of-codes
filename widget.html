@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="code-snippets.js" defer></script>
+    <script src="transitions.js" defer></script>
+
+    <title>Slated</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html" class="nav-page-links">Home</a>
+      <a href="widget.html" class="nav-page-links active">Widget</a>
+      <a href="mailings.html" class="nav-page-links">Mailing</a>
+    </div>
+    <div class="main-container-grid" id="grid-widgets">
+      <!-- Code Snippet Cards via Template-->
+
+      <template id="template-widget-card">
+        <section class="card-container widget-container">
+          <section class="template-information widget">
+            <h2></h2>
+          </section>
+
+          <section class="demo widget"></section>
+
+          <section class="code-container widget">
+            <section class="code-snippet widget">
+              <pre><code class="language-html"></code></pre>
+            </section>
+
+            <section class="code-snippet-copy widget">
+              <button class="zoom-btn widget">Zoom</button>
+              <button class="copy-btn widget" onclick="copyHidden(this)">
+                Copy
+              </button>
+              <code class="hidden-code"></code>
+            </section>
+          </section>
+        </section>
+      </template>
+    </div>
+
+    <!-- Dialog box for code snippet zoom-->
+
+    <dialog class="snippet-modal">
+      <pre><code class="language-html modal-code"></code></pre>
+    </dialog>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  </body>
+</html>
