@@ -84,35 +84,35 @@ function copyHidden(button) {
 
 // Zoom-in functionality
 
-if (["widget", "mailings"].includes(activeTab)) {
-  
+if ([tabs[0], tabs[1], tabs[2]].includes(activeTab)) {
   let modal;
 
   switch (activeTab) {
     case tabs[1]:
-      modal = document.querySelector(".snippet-modal-widget");
+      modal = document.querySelector(".snippet-modal");
       break;
     case tabs[2]:
-      modal = document.querySelector(".snippet-modal-mailing");
+      modal = document.querySelector(".snippet-modal");
       break;
   }
-  console.log(modal);
 
   const modalCode = modal.querySelector(".modal-code");
 
-  document.addEventListener("click", (e) => {
-    const btn = e.target.closest(".zoom-btn");
-    if (!btn) return;
+  if ([tabs[1], tabs[2]].includes(activeTab)) {
+    document.addEventListener("click", (e) => {
+      const btn = e.target.closest(".zoom-btn");
+      if (!btn) return;
 
-    const code = btn
-      .closest(".code-container")
-      .querySelector(".code-snippet code").textContent;
-    modalCode.textContent = code;
-    Prism.highlightElement(modalCode);
-    modal.showModal();
-  });
+      const code = btn
+        .closest(".code-container")
+        .querySelector(".code-snippet code").textContent;
+      modalCode.textContent = code;
+      Prism.highlightElement(modalCode);
+      modal.showModal();
+    });
 
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) modal.close();
-  });
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) modal.close();
+    });
+  }
 }
